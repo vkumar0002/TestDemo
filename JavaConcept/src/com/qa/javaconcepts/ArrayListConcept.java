@@ -1,6 +1,11 @@
 package com.qa.javaconcepts;
 
 import java.util.ArrayList;
+//1. Dynamic Array- ArrayList
+//2. Can Contain duplicate values/elements.
+//3. Maintains insertion order
+//4. Synchronized
+//5. Allows random access to fetch the elements. because it stores the values of indexes.
 
 public class ArrayListConcept {
 
@@ -38,6 +43,18 @@ public class ArrayListConcept {
 			System.out.println(ar.get(i));
 		}
 		
+		//Non-generic V/S Generic
+		
+		ArrayList<Integer>ar1 = new ArrayList<Integer>();
+		ar1.add(10);
+		
+		System.out.println(ar1);
+		
+		ArrayList<String>ar2= new ArrayList<String>();
+		ar2.add("Selenium");
+		ar2.add("WebDriver");
+	
+		System.out.println(ar2);
 	}
 
 }
